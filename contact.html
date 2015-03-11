@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.0.7/parsley.min.js"></script>
+</head>
+    <body>
+        <div id="page-wrap">
+            <header></header>
+            <form id="parsley-form" data-parsley-validate>
+
+            <label for="fullname">Full Name*</label>
+            <input type="text" id="fullname" placeholder="Atilla the Hunt" required />
+
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" data-parsley-trigger="change" placeholder="AtilaTheHunt@gmail.com" required />
+
+            
+            <label for="dogType">What type of dog are you?</label>
+            <fieldset id="radioInput">
+                <input type="radio" name="dogType" id="good" value="I'm a good dog." /> I'm a good dog.<br>
+
+                <input type="radio" name="dogType" id="bad" value="I'm a bad dog." /> I'm a bad dog.<br>
+
+                <input type="radio" name="dogType" id="pizza" value="What? I really like pizza, and if you leave it unguarded, it's your fault, not mine." /> What? I really like pizza, and if you leave it unguarded, it's your fault, not mine.<br>
+            </fieldset>
+
+
+              <label for="favoriteToy">What is your favorite toy to play with?*</label>
+              <select id="favoriteToy" name="favoriteToy" required>
+                <option>Is Peanut Butter a Toy?</option>
+                <option>Rope</option>
+                <option>Ball</option>
+                <option>My Human</option>
+                <option>SQUEEKER!</option>
+                <option>Stuffed Toy</option>
+              </select>
+
+              <label for="textArea" ><p>How is your day going pooch?</p></label>
+                <textarea id="textArea"></textarea>
+
+                <label for="submit-form" ></label>
+                <input id='submit' type='submit' />
+            </form>
+            <div class="contactResults"></div>
+        </div>
+        <footer></footer>
+        <script src="js/page-scripts.js"></script>
+        <script src="js/post.js"></script>
+    </body>
+</html> 
+
+
+
